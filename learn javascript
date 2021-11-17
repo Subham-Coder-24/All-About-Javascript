@@ -171,71 +171,105 @@
 // })
 // console.log(emp2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//how to use filter() function in array
+// const toodos = [
+//     {id:1,todo:"eat"},
+//     {id:2,todo:"sleep"},
+//     {id:3,todo:"code"}
+// ]
+// const newTodo = toodos.filter((item)=>{
+//     return item.id!=3
+// })
+// console.log(newTodo)
+ 
+// const toodos = [
+//     {id:1,todo:"eat"},
+//     {id:2,todo:"sleep"},
+//     {id:3,todo:"code"}
+// ]
+// const removeTodos = (id)=>{ 
+
+// const newTodo = toodos.filter((item)=>{
+//     return item.id!=id
+// })
+//   console.log(newTodo)
+// }
+// removeTodos(2)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//fatch ,promises ans async await
+// fatch('url') // it return promise
+
+// .then((res)=>{
+//     return res.json()
+// })
+// .then((result)=>{
+//     console.log(result)
+// })
+// .catch((err)=>{
+//     console.log(err)
+// })
+
+
+// async function fetchpost(){
+
+// const res = await fatch('url') // it return promise
+// const result = await res.json()
+// console.log(result)
+
+// }
+
+// const fetchpost= async()=>{
+// try{
+// const res = await fatch('url') // it return promise
+// const result = await res.json()
+// console.log(result)
+// }catch(err){
+//     console.log(err)
+// }
+// }
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//console.log("%ci am a coder and %cproblem solver",'color:orange','background:green')
+
+// function print(text){
+//     console.log(`%c ${text}`,'color:green;font-size:20px')
+// }
+//print("i am a coder")
+//object
+// const bullet ={
+//     color:"red",
+//     maxspeed:110,
+//     itro:()=>{
+//         print(`bullet bike is ${this.color} and max speed ${maxspeed} kmph`)
+//     }
+// }
+
+// console.log(bullet.color)
+//creating class
+// class car{
+//     constructor(color,speed){
+//         this.color = color
+//         this.maxspeed = speed
+//     }
+//     intro(){
+//         console.log( `car colour is ${this.color} and max speed is ${this.maxspeed}`)
+//     }
+// }
+//class inheritance
+// class laptop extends car{
+//     constructor(color,speed,fan){
+//         super(color,speed)//call the parent constructor
+//         this.fan=fan
+//     }
+
+// }
+
+//creating object
+// const car1 = new car("red",120)
+// const car2 = new car("black",160)
+// car1.intro()
+// car2.intro()
+
+// const laptop1 = new laptop("red" , 30 ,true)
+// console.log(laptop1.fan)
+// laptop1.intro()
